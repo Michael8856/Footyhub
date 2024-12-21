@@ -1,4 +1,3 @@
-// Contact Form Handling
 document.addEventListener('DOMContentLoaded', function () {const contactForm = document.getElementById('contact-form'); const formResponse = document.getElementById('form-response');
 
 if (contactForm && formResponse) {contactForm.addEventListener ('submit', function (event) {event.preventDefault(); // 
