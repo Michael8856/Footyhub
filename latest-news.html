@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Stay updated with the latest news and stories.">
+<title>Latest News - Football Hub</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="latest-news.html">Latest News</a></li>
+<li><a href="highlights.html">Highlights</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<main>
+
+<section id="latest-news">
+<h1>Latest News</h1>
+<p>Welcome to our Latest News section, where we bring you the most up-to-date and engaging football stories from around the world. Stay informed with breaking news, player updates, and more.</p>
+
+<article>
+<h2>Chelsea Star Mykhailo Mudryk Failed Drugs Test</h2>
+<p><strong>Source:</strong> <a href="https://www.msn.com/en-my/news/other/chelsea-star-mykhailo-mudryk-failed-drugs-test-q-a-how-does-the-testing-regime-work-in-football-what-are-the-penalties-how-long-does-this-take/ar-AA1w2I5b?ocid=BingNewsVerp" target="_blank">MSN News</a></p>
+<p>Explore how the testing regime in football works, what the penalties are, and the timeline for resolving such cases involving Chelsea's Mykhailo Mudryk.</p>
+</article>
+
+<article>
+<h2>Marcus Rashford's Dream Move Revealed</h2>
+<p><strong>Source:</strong> <a href="https://www.msn.com/en-xl/news/other/marcus-rashfords-dream-move-revealed-after-man-united-stars-bombshell-admission-he-wants-to-leave-old-trafford/ar-AA1w6Cc6?ocid=BingNewsVerp" target="_blank">MSN News</a></p>
+<p>Discover Marcus Rashford's thoughts on his future at Manchester United and the potential for a high-profile move to another club.</p>
+</article>
+
+<p>To find out even more footy news, click <a href="https://www.bbc.com/sport/football" target="_blank">here</a>.</p>
+</section>
+
+
+<section id="comments">
+<h2>Your News</h2>
+<form id="comment-form">
+<h3>Add your news</h3>
+<label for="comment-name">Name:</label>
+<input type="text" id="comment-name" placeholder="Enter your name" required>
+
+<label for="comment-content">Comment:</label>
+<textarea id="comment-content" placeholder="Enter your News" rows="3" required></textarea>
+<button type="submit">Add Comment</button>
+</form>
+
+<h2> Community News Feed</h2>
+<div id="comments-feed">
+<p>No comments yet. What do you think!</p>
+</div>
+</section>
+
+<section id="vote-system">
+<h2>Vote for Decisions</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Vote</th>
+<th>Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mudryk: Yes or No</td>
+<td>
+<button data-option="murkyYes">Yes</button>
+<button data-option="murkyNo">No</button>
+</td>
+<td id="Mudryk-results">Yes: 12 | No: 7</td>
+</tr>
+<tr>
+<td>Rashford: Stay or Leave</td>
+<td>
+<button data-option="rashfordStay">Stay</button>
+<button data-option="rashfordLeave">Leave</button>
+</td>
+<td id="rashford-results">Stay: 3 | Leave: 25</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2024 Football Hub. All rights reserved.</p>
+</footer>
+</body>
+</html>
+

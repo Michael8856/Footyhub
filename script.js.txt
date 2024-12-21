@@ -1,0 +1,53 @@
+// Contact Form Handling
+document.addEventListener('DOMContentLoaded', function () {const contactForm = document.getElementById('contact-form'); const formResponse = document.getElementById('form-response');
+
+if (contactForm && formResponse) {contactForm.addEventListener ('submit', function (event) {event.preventDefault(); // 
+
+const name = document.getElementById('name').value.trim();
+
+const email = document.getElementById('email').value.trim();
+
+const message = document.getElementById('message').value.trim();
+
+if (name !== "" && email !== "" && message !== "") {
+
+formResponse.textContent = "Thank you, " + name + "! We'll reply to your email at " + email + " soon.";
+
+formResponse.style.display = "block";
+
+formResponse.style.color = "green";
+
+contactForm.reset(); // Clear the form} else {
+
+formResponse.textContent = "Please fill out all fields!";
+formResponse.style.display = "block";
+formResponse.style.color = "red";
+}
+});
+}
+});
+
+Voting System
+
+document.addEventListener('DOMContentLoaded', function () {const votes = { MudrykYes: 0, MudrykNo: 0, rashfordStay: 0, rashfordLeave: 0 };
+
+const buttons = document.querySelectorAll('#vote-system button');
+if (buttons) { buttons.forEach(function (button) { button.addEventListener('click', function () { const option = button.getAttribute('data-option');
+
+if (votes[option] !== undefined) { votes[option] += 1; // Add one vote to the selected option }
+
+Update the results for Mudryk
+
+const murkyResults = document.getElementById('murky-results');
+if (murkyResults) { murkyResults.textContent = "Yes: " + votes.MudrykYes + " | No: " + votes.MudrykNo;}
+
+Update the results for Rashford
+
+const rashfordResults = document.getElementById('rashford-results');
+if (rashfordResults) {rashfordResults.textContent = "Stay: " + votes.rashfordStay + " | Leave: " + votes.rashfordLeave;}
+
+});
+});
+}
+});
+
